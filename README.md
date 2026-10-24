@@ -1,23 +1,29 @@
 # ghost-workspace-hunter
 
+**幽灵工作空间猎手** · SKILL.md skill
 
-Part of the [WorkBuddy Experts](https://github.com/Lucewalk/lucewalk-experts) collection — expert teams, agents and skills for the WorkBuddy AI assistant platform.
+> WorkBuddy skill — purge stubborn timestamp-named "ghost workspaces" (`YYYY-MM-DD-HH-MM-SS` entries in the sidebar / `workspaces` table).
 
+Part of the [WorkBuddy Experts](https://github.com/Lucewalk/lucewalk-experts) collection.
 
 ## What it does
 
-- A `skill`-type package; see the manifest at `.codebuddy-plugin/plugin.json` for capabilities.
+- Hunts residual timestamp-named workspaces that keep re-appearing after deletion;
+- **Reversible by design** — targets move to Trash/Recycle Bin, never hard-deleted;
+- **Database backup first** — the WorkBuddy DB is backed up before any change;
+- **Active-session guard** — running sessions are protected;
+- **Never touches real named workspaces** — only timestamp-pattern entries match.
+
+## How it works
+
+- Cross-platform (macOS / Windows);
+- `SKILL.md` declares the trigger conditions; `scripts/cleanup.py` performs the guarded cleanup;
+- Summon it in WorkBuddy, confirm the targets, run.
 
 ## Install
 
-1. Download the package zip from [Releases](https://github.com/Lucewalk/ghost-workspace-hunter/releases) or clone this repo;
-2. Unzip keeping the internal manifest structure intact;
-3. Import/register in WorkBuddy (custom connector → trust & enable).
-
-## Version
-
-Current release: **v?** — see [CHANGELOG.md](CHANGELOG.md) if present, or the package manifest.
+Copy the skill folder into your WorkBuddy skills directory (keeping `SKILL.md` at its root) and enable it.
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT — see [LICENSE](LICENSE) in the collection hub.
