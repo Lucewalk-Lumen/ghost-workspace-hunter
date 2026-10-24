@@ -4,7 +4,7 @@
 
 > WorkBuddy skill — purge stubborn timestamp-named "ghost workspaces" (`YYYY-MM-DD-HH-MM-SS` entries in the sidebar / `workspaces` table).
 
-Part of the [Lucewalk Lumen](https://github.com/Lucewalk/lucewalk-lumen) collection.
+Part of the [Lucewalk Lumen](https://github.com/Lucewalk-Lumen/about-me) collection.
 
 ## What it does
 
